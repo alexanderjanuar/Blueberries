@@ -1,0 +1,99 @@
+def menu():
+    print("==================================MENU UTAMA====================================")
+    print(" ")
+    print( "Halo", nama,",Selamat Datang di Aplikasi Mennghitung Luas Bangun Datar")
+    print(" ")
+    print("1.Untuk menghitung Luas Persegi ")
+    print("2.Untuk menhigtung Luas Persegi Panjang ")
+    print("3.Untuk Menghitung Luas Segitiga ")
+    print("4.Untuk Menghitung Luas Jajar Genjang ")
+    print("5.Untuk Menghitung Luas Trapesium ")
+    print("6.Untuk Menghitung Luas Lingkaran ")
+    print(" ")
+
+def keluar():
+    print(" ")
+    print("========Terima Kasih",nama,"Karena Telah Menggunakan Aplikasi Ini========")
+
+
+
+print("************************************************")
+print("======    Isikan Data Diri Dulu ya!!      ======")
+print("************************************************")
+print(" ")
+print("Tuliskan Nama Kamu :")
+nama = input()
+
+
+menu()
+
+pilih = (input("Masukan Angka Pilihan sesuai dengan Luas bangun datar yang akan dihitung: "))
+if pilih == "1":
+    print(" ")
+    print("-----------------------------------------------")
+    panjang = (float(input("Masukkan Panjang Sisi Persegi: ")))
+    luas = panjang * panjang
+    print("Luas Perseginya adalah: ", luas, "CM")
+    print(" ")
+    keluar()
+
+
+elif pilih == "2":
+    print(" ")
+    print("-----------------------------------------------")
+    panjang_persegi = float(input("Masukkan Panjang: "))
+    lebar_persegi = float(input("Masukkan Lebar: "))
+    luas_persegi = panjang_persegi * lebar_persegi
+    print("Luas Perseginya adalah: ", luas_persegi, "CM")
+    print(" ")
+    keluar()
+
+
+elif pilih == "3":
+    print(" ")
+    print("-----------------------------------------------")
+    alas_segitiga = float(input("Masukkan Panjang Alas: "))
+    tinggi_segitiga = float(input("Masukkan Tinggi: "))
+    luas_segitiga = alas_segitiga * tinggi_segitiga / 2
+    print("Luas Segitiganya adalah: ", luas_segitiga, "CM")
+    print(" ")
+    keluar()
+
+
+elif pilih == "4":
+    print(" ")
+    print("-----------------------------------------------")
+    alas_jajar = float(input("Masukkan Panjang Jajar Genjang: "))
+    tinggi_jajar = float(input("Masukkan Tinggi Jajar Genjang: "))
+    luas_jajar = alas_jajar * tinggi_jajar
+    print("Luas Jajar Genjangnya adalah: ", luas_jajar, "CM")
+    print(" ")
+    keluar()
+
+
+elif pilih == "5":
+    print(" ")
+    print("-----------------------------------------------")
+    alas_trapesium = float(input("Masukkan Ukuran Sisi atas Trapesium: "))
+    tinggi_trapesium = float(input("Masukkan Ukuran Sisi bawah Trapesium: "))
+    luas_trapesium = alas_trapesium + tinggi_trapesium
+    luas_trapesiumm = luas_trapesium / 2
+    print(luas_trapesiumm)
+    print(" ")
+    keluar()
+
+
+elif pilih == "6":
+    print(" ")
+    print("-----------------------------------------------")
+    jari_jari = float(input("Masukan Jari-jari Lingkaran: "))
+    luas_lingkaran = jari_jari * 3.14
+    print(luas_lingkaran)
+    print(" ")
+    keluar()
+
+elif pilih > "6":
+    print(" ")
+    print("-----------------------------------------------")
+    print("Maaf Pilihan Tidak Tersedia")
+    keluar()
