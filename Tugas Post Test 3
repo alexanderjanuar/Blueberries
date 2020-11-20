@@ -1,0 +1,159 @@
+Nomor 1.
+
+from time import sleep
+
+def menu():
+    print("\t\t\t\t=============")
+    print("\t\t\t\tToko Kue Sule")
+    print("\t\t\t\t=============")
+    print("Di Toko ini menyediakan: ")
+    print("1.Kue Keju   = Rp. 6000")
+    print("2.Kue Coklat = Rp. 3500")
+
+def keluar():
+    print(" ")
+    print(" ")
+    print("Teima Kasih telah berbelanja di Toko sule")
+    print("Ingin berbelanja lagi? [Y/N]")
+    keluar=input()
+    if keluar == "Y":
+        menu()
+    elif keluar == "y":
+        menu()
+    elif keluar == "n":
+        exit()
+    elif keluar == "N":
+        exit()
+
+
+
+
+
+menu()
+
+print(" ")
+pilihan = input("Pilih Kue yang ingin dipesan[1/2]: ")
+
+while 1:
+    if pilihan == "1":
+        print(" ")
+        keju = int(input("Masukkan Jumlah Kue keju yang ingin dipesan: "))
+        if keju < 4:
+            total_biaya = keju * 6000
+            print("Total biayanya adalah: Rp.", total_biaya)
+            keluar()
+
+        elif keju > 3:
+            total_biaya = keju * 6000
+            print("Selamat kamu mendapat diskon 10%")
+            print("Harga awal: Rp.", total_biaya)
+            jumlah_diskon = total_biaya * 0.1
+            harga_diskon = total_biaya - jumlah_diskon
+            print("Harga diskon: Rp.", harga_diskon)
+            keluar()
+
+        elif keju > 16:
+            total_biaya = keju * 6000
+            print("Selamat kamu mendapat diskon 15%")
+            print("Harga awal: Rp.", total_biaya)
+            jumlah_diskon = total_biaya * 0.15
+            harga_diskon = total_biaya - jumlah_diskon
+            print("Harga diskon: Rp.", harga_diskon)
+            keluar()
+
+        elif keju > 35:
+            print("Maaf Kue keju hanya tersedia 35 potong")
+            print("Datang besok lagi yah!!")
+            keluar()
+
+    elif pilihan == "2":
+        print(" ")
+        coklat = int(input("Masukkan Jumlah Kue coklat yang ingin dipesan: "))
+        if coklat < 5:
+            total_biaya = coklat * 3500
+            print("Total Biayanya adalah: Rp.",total_biaya)
+            keluar()
+
+        elif coklat > 4:
+            total_biaya = coklat * 3500
+            print("Selamat kamu mendapat diskon 7%")
+            print("Harga awal: Rp.", total_biaya)
+            jumlah_diskon = total_biaya * 0.07
+            harga_diskon = total_biaya - jumlah_diskon
+            print("Harga diskon: Rp.", harga_diskon)
+            keluar()
+
+        elif coklat > 16:
+            total_biaya = coklat * 3500
+            print("Selamat kamu mendapat diskon 12%")
+            print("Harga awal: Rp.", total_biaya)
+            jumlah_diskon = total_biaya * 0.12
+            harga_diskon = total_biaya - jumlah_diskon
+            print("Harga diskon: Rp.", harga_diskon)
+            keluar()
+
+        elif keju > 25:
+            print("Maaf Kue keju hanya tersedia 25 potong")
+            print("Datang besok lagi yah!!")
+            keluar()
+
+    else:
+        print("  ")
+        print(" Maaf Opsi yang dimasukkan salah")
+        keluar()
+
+
+
+Nomor 2
+
+
+# NIM 2009106035, 35 + 10 = 45
+z = 1
+a = 1
+while z <= 45:
+    a += 1
+    print(a)
+    if a == 10:
+        a -= 9
+    z += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
